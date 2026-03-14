@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-<!-- Mirrored from html.awaikenthemes.com/antila/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Mar 2026 06:51:52 GMT -->
+<!-- Mirrored from html.awaikenthemes.com/antila/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Mar 2026 06:51:16 GMT -->
 <head>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -11,7 +11,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="Awaiken">
 	<!-- Page Title -->
-    <title>Antila - Single Property and Apartment HTML Template</title>
+    <title>Dhanraj Shree Realtech</title>
 	<!-- Favicon Icon -->
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 	<!-- Google Fonts Css-->
@@ -34,6 +34,7 @@
 	<link rel="stylesheet" href="css/mousecursor.css">
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -41,7 +42,7 @@
 	<div class="preloader">
 		<div class="loading-container">
 			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+			<div id="loading-icon"><img src="images/dsr.png" alt=""></div>
 		</div>
 	</div>
 	<!-- Preloader End -->
@@ -53,7 +54,7 @@
 				<div class="container">
 					<!-- Logo Start -->
 					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.svg" alt="Logo">
+						<img src="images/dsr.png" alt="Logo">
 					</a>
 					<!-- Logo End -->
 
@@ -61,17 +62,11 @@
                     <div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="index.html">Home</a>
-                                    <ul>
-                                        <li class="nav-item"><a class="nav-link" href="index-3.html">Home - Version 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Version 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-4.html">Home - Version 3</a></li>
-                                    </ul>
-                                </li>
+                                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
-                                <li class="nav-item"><a class="nav-link" href="amenities.html">Amenities</a></li>
-                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
+                                  <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="project-single.html">Project Details</a></li>
+                                <!-- <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" href="amenity-single.html">Amenity Details</a></li>
                                         <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
@@ -85,7 +80,7 @@
                                         <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
                                         <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
@@ -743,17 +738,33 @@
                         <!-- Intro Video Image Start -->
                         <div class="intro-video-image">
                             <figure>
-                                <img src="images/intro-video-image.jpg" alt="">
+                                <img src="images/MADAUR FARMS.jpg" alt="">
                             </figure>
                         </div>
                         <!-- Intro Video Image End -->
 
                         <!-- Watch Video Circle Start -->
-                        <div class="play-video-circle">
+                        <!-- <div class="play-video-circle">
                             <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video" data-cursor-text="Play">
                                 <h2>PLAY</h2>
                             </a> 
-                        </div>
+                        </div>   -->
+      <div class="play-video-circle" onclick="document.getElementById('videoPopup').style.display='flex'">
+    <a class="popup-video" data-cursor-text="Play">
+        <h2>PLAY</h2>
+    </a>
+</div>
+
+<!-- Popup Modal -->
+<div id="videoPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:9999; justify-content:center; align-items:center;">
+    
+    <span onclick="closeVideo()" style="position:absolute; top:20px; right:30px; color:white; font-size:40px; cursor:pointer;">&times;</span>
+    
+    <video id="popupVideo" width="80%" height="auto" controls autoplay muted loop style="border-radius:10px;">
+        <source src="images/Video.mp4" type="video/mp4">
+    </video>
+
+</div>
                         <!-- Watch Video Circle End -->
                     </div>
                     <!-- Intro Video Box End -->
@@ -1347,7 +1358,17 @@
         </div>
     </footer>
     <!-- Main Footer End -->
+<script>
+    function closeVideo() {
+        document.getElementById('videoPopup').style.display = 'none';
+        document.getElementById('popupVideo').pause();
+        document.getElementById('popupVideo').currentTime = 0;
+    }
 
+    document.getElementById('videoPopup').addEventListener('click', function(e) {
+        if(e.target === this) closeVideo();
+    });
+</script>
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap js file -->
