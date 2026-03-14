@@ -37,7 +37,7 @@
     <!-- Main Custom Css -->
     <link href="css/custom.css" rel="stylesheet" media="screen">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -66,11 +66,11 @@
                     <div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                                <!-- <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> -->
                                 <li class="nav-item"><a class="nav-link" href="#about">About Us</a>
-                                <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#projectdetail">Project Details</a>
-                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#projectdetail">Project Detail & Pricing</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#virtual">Virtual Site Tour</a></li>
                                 <!-- <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" href="amenity-single.html">Amenity Details</a></li>
@@ -342,7 +342,7 @@
     </div>
     <!-- About US Section End -->
 
-   <!-- What We Do Section Start -->
+    <!-- What We Do Section Start -->
     <div class="what-we-do-moon bg-section">
         <div class="container">
             <div class="row align-items-center">
@@ -556,7 +556,7 @@
     </div>
     <!-- Our Amenities Section End -->
 
-   <!-- Intro Video Start -->
+    <!-- Intro Video Start -->
     <div class="intro-video bg-section" id="project">
         <div class="container-fluid">
             <div class="row">
@@ -577,22 +577,26 @@
                                 <h2>PLAY</h2>
                             </a> 
                         </div>   -->
-      <div class="play-video-circle" onclick="document.getElementById('videoPopup').style.display='flex'">
-    <a class="popup-video" data-cursor-text="Play">
-        <h2>PLAY</h2>
-    </a>
-</div>
+                        <div class="play-video-circle"
+                            onclick="document.getElementById('videoPopup').style.display='flex'">
+                            <a class="popup-video" data-cursor-text="Play">
+                                <h2>PLAY</h2>
+                            </a>
+                        </div>
 
-<!-- Popup Modal -->
-<div id="videoPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:9999; justify-content:center; align-items:center;">
-    
-    <span onclick="closeVideo()" style="position:absolute; top:20px; right:30px; color:white; font-size:40px; cursor:pointer;">&times;</span>
-    
-    <video id="popupVideo" width="80%" height="auto" controls autoplay muted loop style="border-radius:10px;">
-        <source src="images/Video.mp4" type="video/mp4">
-    </video>
+                        <!-- Popup Modal -->
+                        <div id="videoPopup"
+                            style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:9999; justify-content:center; align-items:center;">
 
-</div>
+                            <span onclick="closeVideo()"
+                                style="position:absolute; top:20px; right:30px; color:white; font-size:40px; cursor:pointer;">&times;</span>
+
+                            <video id="popupVideo" width="80%" height="auto" controls autoplay muted loop
+                                style="border-radius:10px;">
+                                <source src="images/Video.mp4" type="video/mp4">
+                            </video>
+
+                        </div>
                         <!-- Watch Video Circle End -->
                     </div>
                     <!-- Intro Video Box End -->
@@ -602,6 +606,27 @@
     </div>
     <!-- Intro Video End -->
 
+<!-- virtual site tour start -->
+    <div class="apartments-plans-moon" id="virtual">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-xl-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp">Virtual Site Tour</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Discover spacious apartment plans with
+                            modern Virtual layout</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-video-image">
+                <video id="popupVideo" width="100%" height="auto" controls autoplay muted loop
+                    style="border-radius:10px;">
+                    <source src="images/Video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Apartments Plans Section Start -->
@@ -611,153 +636,27 @@
                 <div class="col-xl-12">
                     <!-- Section Title Start -->
                     <div class="section-title section-title-center">
-                        <span class="section-sub-title wow fadeInUp">Project Details</span>
+                        <span class="section-sub-title wow fadeInUp">Project Detail & Pricing</span>
                         <h2 class="text-anime-style-3" data-cursor="-opaque">Discover spacious apartment plans with
                             modern layouts</h2>
-                    </div>                   
-                </div>             
+                    </div>
+                </div>
             </div>
-             <div class="intro-video-image">
-                            <figure>
-                                <img src="images/dsr pamphlet.jpg" alt="">
-                            </figure>
-                        </div>
+            <div class="intro-video-image">
+                <figure>
+                    <img src="images/dsr pamphlet.jpg" alt="">
+                </figure>
+            </div>
         </div>
     </div>
     <!-- Apartments Plans Section End -->
 
 
-    <!-- Our Projects Section Start -->
-    <div class="our-projects">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-xl-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title section-title-center">
-                        <span class="section-sub-title wow fadeInUp">Our Projects</span>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Our residential projects built for modern
-                            lifestyles</h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xl-4 col-md-6">
-                    <!-- Project Item Start -->
-                    <div class="project-item wow fadeInUp">
-                        <!-- Project Item Image Start -->
-                        <div class="project-item-image">
-                            <a href="project-single.html" data-cursor-text="View">
-                                <figure>
-                                    <img src="images/project-1.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Project Item Image End -->
-
-                        <!-- Project Item Btn Start -->
-                        <div class="project-item-btn">
-                            <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
-                        </div>
-                        <!-- Project Item Btn End -->
-
-                        <!-- Project Item Content Start -->
-                        <div class="project-item-content">
-                            <h2><a href="project-single.html">Skyline Residency</a></h2>
-                            <p>Luxury Apartments</p>
-                        </div>
-                        <!-- Project Item Content End -->
-                    </div>
-                    <!-- Project Item End -->
-                </div>
-
-                <div class="col-xl-4 col-md-6">
-                    <!-- Project Item Start -->
-                    <div class="project-item wow fadeInUp" data-wow-delay="0.2s">
-                        <!-- Project Item Image Start -->
-                        <div class="project-item-image">
-                            <a href="project-single.html" data-cursor-text="View">
-                                <figure>
-                                    <img src="images/project-2.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Project Item Image End -->
-
-                        <!-- Project Item Btn Start -->
-                        <div class="project-item-btn">
-                            <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
-                        </div>
-                        <!-- Project Item Btn End -->
-
-                        <!-- Project Item Content Start -->
-                        <div class="project-item-content">
-                            <h2><a href="project-single.html">Greenview Homes</a></h2>
-                            <p>Residential</p>
-                        </div>
-                        <!-- Project Item Content End -->
-                    </div>
-                    <!-- Project Item End -->
-                </div>
-
-                <div class="col-xl-4 col-md-6">
-                    <!-- Project Item Start -->
-                    <div class="project-item wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Project Item Image Start -->
-                        <div class="project-item-image">
-                            <a href="project-single.html" data-cursor-text="View">
-                                <figure>
-                                    <img src="images/project-3.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- Project Item Image End -->
-
-                        <!-- Project Item Btn Start -->
-                        <div class="project-item-btn">
-                            <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
-                        </div>
-                        <!-- Project Item Btn End -->
-
-                        <!-- Project Item Content Start -->
-                        <div class="project-item-content">
-                            <h2><a href="project-single.html">Prime Living Towers</a></h2>
-                            <p>High-Rise Apartments</p>
-                        </div>
-                        <!-- Project Item Content End -->
-                    </div>
-                    <!-- Project Item End -->
-                </div>
-
-                <div class="col-lg-12">
-                    <!-- Section Footer Text Start -->
-                    <div class="section-footer-text section-satisfy-img wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Satisfy Client Images Start -->
-                        <div class="satisfy-client-images">
-                            <div class="satisfy-client-image">
-                                <figure class="image-anime">
-                                    <img src="images/author-1.jpg" alt="">
-                                </figure>
-                            </div>
-                            <div class="satisfy-client-image add-more">
-                                <img src="images/icon-phone-white.svg" alt="">
-                            </div>
-                        </div>
-                        <!-- Satisfy Client Images End -->
-                        <p>Let's make something great work together. <a href="contact.html"> Get Free Quote</a></p>
-                    </div>
-                    <!-- Section Footer Text End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Projects Section End -->
-
- 
+  
 
 
-  <div class="page-contact-us" id="contact">
+
+    <div class="page-contact-us" id="contact">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6">
@@ -765,8 +664,11 @@
                     <div class="contact-us-content dark-section">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Looking for More Detail Get in Touch with Us</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Get in touch with our team to receive detailed information about our apartments, amenities, pricing, availability, and ongoing projects.</p>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Looking for More Detail Get in Touch
+                                with Us</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Get in touch with our team to receive detailed
+                                information about our apartments, amenities, pricing, availability, and ongoing
+                                projects.</p>
                         </div>
                         <!-- Section Title End -->
 
@@ -799,7 +701,7 @@
                             <!-- Contact Info Item Start  -->
                             <div class="contact-info-item location-item wow fadeInUp" data-wow-delay="0.4s">
                                 <div class="icon-box">
-                                    <img src="images/icon-mail-white.svg" alt="">
+                                    <img src="images/icon-location-white.svg" alt="">
                                 </div>
                                 <div class="contact-info-item-content">
                                     <h3>Our Location</h3>
@@ -831,41 +733,49 @@
                         <div class="section-title">
                             <span class="section-sub-title wow fadeInUp">Contact Us Today!</span>
                             <h2 class="text-anime-style-3" data-cursor="-opaque">Send A Message</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Have question our apartment available amenities? Send us a message and our dedicated team will respond promptly, providing personalized guidance, detailed information.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Have question our apartment available
+                                amenities? Send us a message and our dedicated team will respond promptly, providing
+                                personalized guidance, detailed information.</p>
                         </div>
                         <!-- Section Title End -->
 
                         <!-- Contact Form Start -->
                         <div class="contact-form">
-                            <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.4s">
+                            <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp"
+                                data-wow-delay="0.4s">
                                 <div class="row">
                                     <div class="form-group col-md-6 mb-4">
                                         <label>First Name:</label>
-                                        <input type="text" name="fname" class="form-control" id="fname" placeholder="Enter First Name *" required>
+                                        <input type="text" name="fname" class="form-control" id="fname"
+                                            placeholder="Enter First Name *" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
                                     <div class="form-group col-md-6 mb-4">
                                         <label>Last Name:</label>
-                                        <input type="text" name="lname" class="form-control" id="lname" placeholder="Enter Last Name *" required>
+                                        <input type="text" name="lname" class="form-control" id="lname"
+                                            placeholder="Enter Last Name *" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
                                     <div class="form-group col-md-6 mb-4">
                                         <label>Email Address:</label>
-                                        <input type="email" name ="email" class="form-control" id="email" placeholder="Enter Email Address *" required>
+                                        <input type="email" name="email" class="form-control" id="email"
+                                            placeholder="Enter Email Address *" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
                                     <div class="form-group col-md-6 mb-4">
                                         <label>Phone Number:</label>
-                                        <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter Phone Number *" required>
+                                        <input type="text" name="phone" class="form-control" id="phone"
+                                            placeholder="Enter Phone Number *" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
                                     <div class="form-group col-md-12 mb-5">
                                         <label>Message:</label>
-                                        <textarea name="message" class="form-control" id="message" rows="5" placeholder="Any Additional Message..."></textarea>
+                                        <textarea name="message" class="form-control" id="message" rows="5"
+                                            placeholder="Any Additional Message..."></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
@@ -885,7 +795,7 @@
     </div>
 
 
-  <!-- Google Map Start -->
+    <!-- Google Map Start -->
     <div class="google-map" id="location">
         <div class="container">
             <div class="row section-row">
@@ -894,7 +804,8 @@
                     <div class="section-title section-title-center">
                         <span class="section-sub-title wow fadeInUp">Our Location</span>
                         <h2 class="text-anime-style-3" data-cursor="-opaque">Where Training Meets Opportunity</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">Visit our facility to train, learn, and grow in a professional basketball environment built for performance and development.</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">Visit our facility to train, learn, and grow in a
+                            professional basketball environment built for performance and development.</p>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -904,8 +815,10 @@
                 <div class="col-lg-12">
                     <!-- Google Map Start -->
                     <div class="google-map-iframe wow fadeInUp" data-wow-delay="0.4s">
-                    
-                        <iframe src="https://maps.google.com/maps?width=600&height=400&hl=en&q=501%2C%205th%20Floor%2C%20Siddharth%20Palace%2C%20Chander%20Nagar%2C%20Ghaziabad%2C%20(U.P.)%2C%20201011&t=&z=14&ie=UTF8&iwloc=B&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <iframe
+                            src="https://maps.google.com/maps?width=600&height=400&hl=en&q=501%2C%205th%20Floor%2C%20Siddharth%20Palace%2C%20Chander%20Nagar%2C%20Ghaziabad%2C%20(U.P.)%2C%20201011&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <!-- Google Map End -->
                 </div>
@@ -933,7 +846,7 @@
 
                         <!-- Contact Us Circle Start -->
                         <div class="lets-talk-btn-moon">
-                            <a href="contact.html">Let's Talk</a>
+                            <a href="#contact">Let's Talk</a>
                         </div>
                         <!-- Contact Us Circle End -->
                     </div>
@@ -999,11 +912,12 @@
                             <!-- Footer Menu Start -->
                             <div class="footer-menu-moon">
                                 <ul>
-                                    <li><a href="index.html">home</a></li>
-                                    <li><a href="about.html">about Us</a></li>
-                                    <li><a href="projects.html">Projects</a></li>
-                                    <li><a href="project-single.html">project Details</a></li>
-                                    <li><a href="contact.html">contact Us</a></li>
+                                    <!-- <li><a href="index.html">home</a></li> -->
+                                    <li><a href="#about">about Us</a></li>
+                                    <li><a href="#project">Project</a></li>
+                                    <li><a href="#projectdetail">project Detail & Pricing</a></li>
+                                    <li><a href="#virtual">Virtual Site Tour</a></li>
+                                    <li><a href="#contact">contact Us</a></li>
                                 </ul>
                             </div>
                             <!-- Footer Menu End -->
@@ -1022,17 +936,37 @@
         <!-- Footer Copyright End -->
     </footer>
     <!-- Main Footer End -->
-<script>
-    function closeVideo() {
-        document.getElementById('videoPopup').style.display = 'none';
-        document.getElementById('popupVideo').pause();
-        document.getElementById('popupVideo').currentTime = 0;
-    }
+    <script>
+        function closeVideo() {
+            document.getElementById('videoPopup').style.display = 'none';
+            document.getElementById('popupVideo').pause();
+            document.getElementById('popupVideo').currentTime = 0;
+        }
 
-    document.getElementById('videoPopup').addEventListener('click', function(e) {
-        if(e.target === this) closeVideo();
-    });
-</script>
+        document.getElementById('videoPopup').addEventListener('click', function (e) {
+            if (e.target === this) closeVideo();
+        });
+    </script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const fname = document.getElementById('fname').value;
+            const lname = document.getElementById('lname').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            const mailtoLink = `mailto:info@dhanrajrealtech.com
+            ?subject=New Contact Form Message
+            &body=Name: ${fname} ${lname}%0D%0A
+            Email: ${email}%0D%0A
+            Phone: ${phone}%0D%0A
+            Message: ${message}`;
+
+            window.location.href = mailtoLink;
+        });
+    </script>
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap js file -->
