@@ -451,6 +451,7 @@ a:focus{
 	border-radius: 100px;
 	padding: 8px 20px 8px 36px;
     margin-bottom: 15px;
+	margin-left: 80px;
 }
 
 .section-title .section-sub-title::before{
@@ -473,14 +474,18 @@ a:focus{
 }
 
 .section-title h2{
-	font-size: 52px;
+	font-size: 47px;
 	margin-bottom: 0;
 	cursor: none;
+	padding-left: 80px;
+	padding-right: 80px;
 }
 
 .section-title p{
 	margin-top: 20px;
 	margin-bottom: 0;
+	padding-left: 80px;
+	padding-right: 80px;
 }
 
 .dark-section .section-title .section-sub-title{
@@ -1366,7 +1371,7 @@ header.main-header .header-sticky.active{
 	height: 100% !important;
 	object-fit: cover;
 	border-radius: 20px;
-	filter: brightness(70%);
+	/* filter: brightness(70%); */
 	transition: all 1s ease-in-out;
 }
 
@@ -5040,6 +5045,7 @@ header.main-header .header-sticky.active{
 	.section-title .section-sub-title{
 		padding: 6px 12px 6px 26px;
 		margin-bottom: 10px;
+		margin-left: 0;
 	}
 
 	.section-title .section-sub-title::before{
@@ -5052,10 +5058,15 @@ header.main-header .header-sticky.active{
 
 	.section-title h2{
 		font-size: 38px;
+			padding-left: 0;
+		padding-right: 0;
+
 	}
 
 	.section-title p{
 		margin-top: 10px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.hero{
@@ -6830,11 +6841,11 @@ header.main-header .header-sticky.active{
 }
 
 .what-we-list-moon ul li{
-	width: calc(50% - 10px);
+	width: calc(32% - 10px);
 	position: relative;
 	color: var(--primary-color);
 	line-height: 1.5em;
-	padding-left: 25px;
+	padding-left: 86px;
 }
 
 .what-we-list-moon ul li::before{
@@ -6856,6 +6867,7 @@ header.main-header .header-sticky.active{
 	border-top: 1px solid var(--divider-color);
 	margin-top: 40px;
 	padding-top: 40px;
+	padding-left: 80px;
 }
 
 .what-we-footer-moon .about-us-contact-box-moon .icon-box::before{
@@ -6877,10 +6889,10 @@ header.main-header .header-sticky.active{
 .what-we-image-box{
 	position: relative;
 	margin-left: 20px;
-	padding: 0 35px 35px 70px; 
+	padding: 35px 70px; 
 }
 
-.what-we-image-box:before{
+/* .what-we-image-box:before{
 	position: absolute;
 	content: '';
 	right: 0;
@@ -6889,7 +6901,7 @@ header.main-header .header-sticky.active{
 	height: 372px;
 	background-color: var(--accent-color);
 	border-radius: 20px;
-}
+} */
 
 .what-we-image-box .contact-us-circle-moon{
 	position: absolute;
@@ -7699,20 +7711,23 @@ header.main-header .header-sticky.active{
 
 	.what-we-list-moon ul li{
 		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.what-we-footer-moon{
 		gap: 20px;
+		padding: 0;
 	}
 
 	.what-we-image-box{
-		padding: 0 25px 25px 50px;
+		padding: 0 0px 0px 0px;
 	}
 
-	.what-we-image-box:before{
+	/* .what-we-image-box:before{
 		width: 210px;
     	height: 272px;
-	}
+	} */
 
 	.faqs-cta-box-moon{
 		max-width: 100%;
